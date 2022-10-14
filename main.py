@@ -3,6 +3,11 @@ from selenium.webdriver.common.by import By
 import webbrowser
 import time
 
+#todo:
+#Add option to pause loop
+#alert when bait empty
+
+
 
 gameCode = ""
 gameUrl = "https://www.gimkit.com/join?gc="
@@ -15,4 +20,5 @@ driver.get(gameUrl)
 
 buttonFish = driver.find_elements(By.ID, "insert Button ID here")
 
-buttonFish.click()
+while True:
+    buttonFish.click()
